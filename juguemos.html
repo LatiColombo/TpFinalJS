@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TpFinal</title>
+</head>
+<body >
+    <nav>
+        <a href="./index.html">
+            <svg width="200" height="80">
+                <rect id="rect1" x="45" y="5" width="60" height="35" fill="#3F6797" rx="5"></rect>
+                <rect id="rect2" x="50" y="10" width="50" height="25" fill="#B1D5E4" rx="5"></rect>
+                <polygon id="kybrd1" points="55 45 ,95 45,115 62,30 62" fill="#3F6797"></polygon>
+                <polygon id="kybrd2" points="57 48 ,92 48,104 58,43 58" fill="#B1D5E4"></polygon>
+            </svg>
+        </a>
+
+        <ul class="menu">
+            <li class="menuItem">
+                <a class="linkItem" href="./historia.html"> HISTORIA</a>
+            </li>
+            <li class="menuItem">
+                <a class="linkItem" href="./juguemos.html"> JUGUEMOS</a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="centralImage">
+        <h1 class="centerTitle"> JUGUEMOS UN POCO</h1> 
+    </div>
+
+    <main>
+<h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+
+        <section class="game">
+            <div class="emptyBoxes">
+                <div id="dropbox1" ondragover="preventAction(event)" ondrop="dropData(event)" >
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div id="dropbox2" ondragover="preventAction(event)" ondrop="dropData(event)" >
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div id="dropbox3" ondragover="preventAction(event)" ondrop="dropData(event)" >
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+            <div id="imgBox">
+                <img id="img1" src="./assets/imagenes/rompe3.png" />
+                <img id="img2" src="./assets/imagenes/rompe2.png" />
+                <img id="img3" src="./assets/imagenes/rompe1.png" />
+            </div>
+        </section>
+        <button onclick="reboot()" class="linkItem restart" >Reiniciar</button>
+        
+    </main>
+    <script src="./gameScript.js"></script>
+</body>
+</html>
