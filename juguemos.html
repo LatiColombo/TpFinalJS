@@ -37,20 +37,20 @@
 
         <section class="game">
             <div class="emptyBoxes">
-                <div id="dropbox1" ondragover="preventAction(event)" ondrop="dropData(event)" >
+                <div class="dropbox" id="0"  ondragover="preventAction(event)" ondrop="dropData(event)" >
                     <p>Arrastre y suelte la imagen aquí</p>
                 </div>
-                <div id="dropbox2" ondragover="preventAction(event)" ondrop="dropData(event)" >
+                <div class="dropbox" id="1" ondragover="preventAction(event)" ondrop="dropData(event)" >
                     <p>Arrastre y suelte la imagen aquí</p>
                 </div>
-                <div id="dropbox3" ondragover="preventAction(event)" ondrop="dropData(event)" >
+                <div class="dropbox" id="2"ondragover="preventAction(event)" ondrop="dropData(event)"  >
                     <p>Arrastre y suelte la imagen aquí</p>
                 </div>
             </div>
-            <div id="imgBox">
-                <img id="img1" src="./assets/imagenes/rompe3.png" />
-                <img id="img2" src="./assets/imagenes/rompe2.png" />
-                <img id="img3" src="./assets/imagenes/rompe1.png" />
+            <div class="imgBox">
+                <img id="img1" src="../assets/imagenes/Rompe3.png" draggable="true" ondragstart="saveData(event)" alt="Rompecabezas imagen 3"/>
+                <img id="img2"  src="../assets/imagenes/rompe2.png" ondragstart="saveData(event)" alt="Rompecabezas imagen 2 "/>
+                <img id="img3"  src="../assets/imagenes/Rompe1.png" ondragstart="saveData(event)" alt="Rompecabezas imagen 1"/>
             </div>
         </section>
         <button onclick="reboot()" class="linkItem restart" >Reiniciar</button>

@@ -124,6 +124,7 @@ h2{
 
 p{
     color: black;
+   
 }
 
 .parentContent{
@@ -171,7 +172,7 @@ p{
 }
 
 .goButton:active{
-    box-shadow: 0px 0px darkgray;
+    box-shadow: 0px 0px #2D2D2D;
     transform: translate(3px, 2px);
 }
 
@@ -189,6 +190,7 @@ p{
     gap: 25px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .ensamblajeTxt{
     width: 45%;
@@ -231,7 +233,7 @@ p{
 
 
 .videoButton:active{
-    box-shadow: 0px 0px darkgray;
+    box-shadow: 0px 0px #2D2D2D;
     transform: translate(3px, 2px);
 }
 #videoLength{
@@ -251,7 +253,7 @@ p{
     display: flex;
     gap: 1px;
 }
-#dropbox1,#dropbox2,#dropbox3{
+.dropbox{
     background-color: grey;
     width: 275px;
     height: 400px;
@@ -259,7 +261,7 @@ p{
     text-align: center;
 }
 
-#imgBox{
+.imgBox{
     margin: 40px;
 }
 #img1,#img2,#img3{
